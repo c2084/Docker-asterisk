@@ -7,7 +7,7 @@ sudo docker pull ubuntu
 sudo docker run -i -t ubuntu
 /#  apt-get update
 /#  apt-get install net-tools
-/#  ip add
+/#  ifconfig
 /#  apt-get install asterisk -y
 /#  exit
 
