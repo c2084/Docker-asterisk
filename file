@@ -1,0 +1,31 @@
+  GNU nano 6.2                                                                                                                      gg *                                                                                                                             
+sudo apt update
+sudo apt upgrade -y
+
+  #change dir to 
+sudo docker pull ubuntu
+sudo docker run -i -t ubuntu
+/#  apt-get update
+/#  apt-get install net-tools
+/#  ip add
+/#  apt-get install asterisk -y
+/#  exit
+
+sudo docker commit {______} ubuntu-asterisk
+sudo docker run -i -t ubuntu-asterisk
+/#  apt-get install nano
+
+*#*  git clone https://github.com/c2084/Asterisks-config-files.git ./githubrepo
+##################################       /#  nano /etc/asterisk/extensions.conf
+##################################       /# nano /etc/asterisk/sip.conf
+##################################      /# nano /etc/asterisk/
+      /# /etc/init.d/asterisk stop
+     /# /etc/init.d/asterisk start
+    /# asterisk -t
+
+sip show peers
+exit
+exit
+
+sudo docker commit {_____} ubuntu-asterisk
+
