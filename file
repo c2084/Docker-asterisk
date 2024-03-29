@@ -15,6 +15,7 @@ sudo docker commit {______} ubuntu-asterisk
 sudo docker run -i -t ubuntu-asterisk
 /#  apt-get install nano
 
+*#*  cd /etc/asterisk/
 *#*  git clone https://github.com/c2084/Asterisks-config-files.git ./githubrepo
 ##################################       /#  nano /etc/asterisk/extensions.conf
 ##################################       /# nano /etc/asterisk/sip.conf
