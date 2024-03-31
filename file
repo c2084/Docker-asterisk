@@ -16,10 +16,10 @@ sudo docker run -i -t ubuntu-asterisk
 /#  apt-get install nano
 
 *#*  cd /etc/asterisk/
-*X*  git clone https://github.com/c2084/Asterisks-config-files.git ./githubrepo
+
     /#  nano /etc/asterisk/extensions.conf
       /# nano /etc/asterisk/sip.conf
-     /# nano /etc/asterisk/
+                                              
       /# /etc/init.d/asterisk stop
      /# /etc/init.d/asterisk start
     /# asterisk -t
@@ -29,4 +29,25 @@ exit
 exit
 
 sudo docker commit {_____} ubuntu-asterisk
+sudo docker run -i -t ubuntu-asterisk
+sudo docker network rm mynetwork
+sudo docker network create --driver=bridge --subnet=192.268.15.0/24 mynetwork
+sudo docker run -i -t -p 5060:5060 --network mynetwork --ip 192.168.15.22 ubuntu-asterisk
 
+
+
+[1001]
+username=1001
+secret=1234
+context=public
+host=dynamic
+callerid="kevin"
+mailbox=1001@default
+
+[1002]
+username=1002
+secret=1234
+context=public
+host=dynamic
+callerid="john"
+mailbox=1002@default
