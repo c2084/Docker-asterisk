@@ -31,7 +31,8 @@ exit
 sudo docker commit {_____} ubuntu-asterisk
 sudo docker run -i -t ubuntu-asterisk
 sudo docker network rm mynetwork
-sudo docker network create --driver=bridge --subnet=192.268.15.0/24 mynetwork
+*X* sudo docker network create --driver=bridge --subnet=192.168.15.0/24 mynetwork
+sudo docker network create --driver=vlan --subnet=192.168.15.0/24 --gateway=192.168.15.1 -o parent=enp2s0 mynetwork
 sudo docker run -i -t -p 5060:5060 --network mynetwork --ip 192.168.15.22 ubuntu-asterisk
 
 
