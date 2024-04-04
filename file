@@ -20,37 +20,22 @@ mv sip.conf sip.conf.backup
 mv extensions.conf extensions.conf.backup
 cd 
     /#  nano /etc/asterisk/extensions.conf
-      /# nano /etc/asterisk/sip.conf
-                                              
-      /# /etc/init.d/asterisk stop
-     /# /etc/init.d/asterisk start
+    /# nano /etc/asterisk/sip.conf
+          insert sip.conf and extensions.conf                                    
+    /# /etc/init.d/asterisk stop
+    /# /etc/init.d/asterisk start
     /# asterisk -t
 
 sip show peers
 exit
 exit
 
-
-
- sudo docker run -it ubuntu
-
- sudo docker run -i -t -p 5060:5060 ubuntu
-
-
  sudo docker run -d -i -t -p 5060:5060 ubuntu
 
-sudo docker exec -i -t dazzling_meninsky sh
+sudo docker exec -i -t {_________________} sh
 
 
 
-
-
-sudo docker commit {_____} ubuntu
-sudo docker run -i -t ubuntu
-sudo docker network rm mynetwork
-*X* sudo docker network create --driver=bridge --subnet=192.168.15.0/24 mynetwork
-sudo docker network create --driver=macvlan --subnet=192.168.15.0/24 --gateway=192.168.15.1 -o parent=enp2s0 mynetwork
-sudo docker run -i -t -p 5060:5060 --network mynetwork --ip 192.168.15.22 ubuntu-asterisk
 
 
 
