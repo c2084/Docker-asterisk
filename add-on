@@ -13,3 +13,14 @@ context=public
 host=dynamic
 callerid="john"
 mailbox=1002@default
+
+
+
+sudo docker commit {_____} ubuntu
+sudo docker run -i -t ubuntu
+sudo docker network rm mynetwork
+*X* sudo docker network create --driver=bridge --subnet=192.168.15.0/24 mynetwork
+sudo docker network create --driver=macvlan --subnet=192.168.15.0/24 --gateway=192.168.15.1 -o parent=enp2s0 mynetwork
+sudo docker run -i -t -p 5060:5060 --network mynetwork --ip 192.168.15.22 ubuntu-asterisk
+
+
