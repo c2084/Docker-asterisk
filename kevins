@@ -1,4 +1,4 @@
-                  sip.conf
+                        sip.conf
 [general]
 context=internal
 allow=ulaw
@@ -20,11 +20,18 @@ host=dynamic
 secret=1234
 context=internal
 
-extensions.conf
+                      extensions.conf
 [internal]
 exten=>6000,1,dial(SIP/zoiper,20)
 exten=>6001,1,dial(SIP/xlite,20)
 
+                        voicemail.conf
+[main]
+6000 => 6000
 
+6001 => 6001
 
+6002 => 6002
+
+6003 => 6003
 
