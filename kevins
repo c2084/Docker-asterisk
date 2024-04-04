@@ -1,1 +1,30 @@
+                  sip.conf
+[general]
+context=internal
+allow=ulaw
+allowguest=no
+udpbindaddr=0.0.0.0:5060
+disallow=all
+alwaysauthreject=yes
+srvlookup=yes
+
+[zopier]
+type=friend
+host=dynamic
+secret=1234
+context=internal
+
+[xlite]
+type=friend
+host=dynamic
+secret=1234
+context=internal
+
+extensions.conf
+[internal]
+exten=>6000,1,dial(SIP/zoiper,20)
+exten=>6001,1,dial(SIP/xlite,20)
+
+
+
 
