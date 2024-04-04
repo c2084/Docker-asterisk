@@ -15,8 +15,10 @@ sudo docker commit {______} ubuntu
 sudo docker run -i -t ubuntu
 /#  apt-get install nano
 
-*#*  cd /etc/asterisk/
-
+cd /etc/asterisk/
+mv sip.conf sip.conf.backup
+mv extensions.conf extensions.conf.backup
+cd 
     /#  nano /etc/asterisk/extensions.conf
       /# nano /etc/asterisk/sip.conf
                                               
@@ -52,18 +54,4 @@ sudo docker run -i -t -p 5060:5060 --network mynetwork --ip 192.168.15.22 ubuntu
 
 
 
-[1001]
-username=1001
-secret=1234
-context=public
-host=dynamic
-callerid="kevin"
-mailbox=1001@default
 
-[1002]
-username=1002
-secret=1234
-context=public
-host=dynamic
-callerid="john"
-mailbox=1002@default
