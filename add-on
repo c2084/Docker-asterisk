@@ -1,0 +1,15 @@
+[1001]
+username=1001
+secret=1234
+context=public
+host=dynamic
+callerid="kevin"
+mailbox=1001@default
+
+[1002]
+username=1002
+secret=1234
+context=public
+host=dynamic
+callerid="john"
+mailbox=1002@default
