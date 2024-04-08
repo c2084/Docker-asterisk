@@ -12,7 +12,8 @@ sudo docker run -i -t ubuntu
 /#  exit
 
 sudo docker commit {______} ubuntu
-sudo docker run -i -t ubuntu
+-----------------------------------------------------------
+||sudo docker run -i -t ubuntu
 /#  apt-get install nano
 
 cd /etc/asterisk/
@@ -29,7 +30,7 @@ cd
 sip show peers
 exit
 exit
-
+-----------------------------------------------------------------
  sudo docker run -d -i -t -p 5060:5060 ubuntu
 
 sudo docker exec -i -t {_________________} sh
